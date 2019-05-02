@@ -1,0 +1,6 @@
+{
+    "Web-Server":  "Enabled",
+    "Windows-Internal-DB":  "Enabled",
+    "NLB":  "Enabled",
+    "Powershell-v2":  "Disabled"
+}
