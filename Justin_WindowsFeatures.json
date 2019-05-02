@@ -2,5 +2,5 @@
     "Web-Server":  "Enabled",
     "Windows-Internal-DB":  "Enabled",
     "NLB":  "Enabled",
-    "MicrosoftWindowsPowerShellV2":  "Disabled"
+    "Powershell-v2":  "Disabled"
 }
