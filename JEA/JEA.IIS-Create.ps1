@@ -7,3 +7,4 @@ Register-PSSessionConfiguration `
     -Name JEA.IIS `
     -Path C:\ProgramData\JEA.IIS\JEA.IIS.pssc `
     -SecurityDescriptorSddl $SddlString
+    
