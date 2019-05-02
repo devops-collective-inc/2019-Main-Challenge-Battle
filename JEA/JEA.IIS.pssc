@@ -1,0 +1,75 @@
+@{
+
+    # Version number of the schema used for this document
+    SchemaVersion = '2.0.0.0'
+    
+    # ID used to uniquely identify this document
+    GUID = 'a95b57da-0403-4764-a6c0-24434b2610e9'
+    
+    # Author of this document
+    Author = 'Sean Kenny'
+    
+    # Description of the functionality provided by these settings
+    # Description = ''
+    
+    # Company associated with this document
+    CompanyName = 'Battle Faction'
+    
+    # Copyright statement for this document
+    Copyright = '(c) Battle Faction. All rights reserved.'
+    
+    # Session type defaults to apply for this session configuration. Can be 'RestrictedRemoteServer' (recommended), 'Empty', or 'Default'
+    SessionType = 'RestrictedRemoteServer'
+    
+    # Directory to place session transcripts for this session configuration
+    # TranscriptDirectory = 'C:\Transcripts\'
+    
+    # Whether to run this session configuration as the machine's (virtual) administrator account
+    RunAsVirtualAccount = $true
+    
+    # Scripts to run when applied to a session
+    # ScriptsToProcess = 'C:\ProgramData\JEA.RDS\Setup.ps1'
+    
+    VisibleCmdlets=
+        @{Name='Get-Service';
+            Parameters=
+                @{Name='Name';ValidatePattern='^W3Svc$'}
+        },
+        @{Name='Restart-Service';
+            Parameters=
+                @{Name='Name';ValidatePattern='^W3Svc$'}
+        },
+        @{Name='Start-Website'},
+        @{Name='Stop-Website'},
+        @{Name='Start-WebAppPool'},
+        @{Name='Stop-WebAppPool'},
+        @{Name='New-WebAppPool'}
+
+
+
+
+    # VisibleFunctions='grdu'
+
+    # FunctionDefinitions=
+    #     @{Name='Add-ADGroupMemberTTL';
+    #         ScriptBlock=
+    #         {
+    #             param (
+                    
+    #             )
+    #         }
+    #     }
+    
+    # User roles (security groups), and the role capabilities that should be applied to them when applied to a session
+    # RoleDefinitions = @{ 'CONTOSO\SqlAdmins' = @{ RoleCapabilities = 'SqlAdministration' }; 'CONTOSO\ServerMonitors' = @{ VisibleCmdlets = 'Get-Process' } } 
+    
+    # Language mode to apply when applied to a session. Can be 'NoLanguage' (recommended), 'RestrictedLanguage', 'ConstrainedLanguage', or 'FullLanguage'
+    LanguageMode = 'RestrictedLanguage'
+    
+    # Execution policy to apply when applied to a session
+    # ExecutionPolicy = 'Bypass'
+    
+    # Modules to import when applied to a session
+    ModulesToImport = 'WebAdministration'
+    
+    }
