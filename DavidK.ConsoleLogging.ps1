@@ -1,5 +1,5 @@
 # DavidK.ConsoleLogging.ps1
 
 
-Start-Transcript
+Start-Transcript -IncludeInvocationHeader
 
