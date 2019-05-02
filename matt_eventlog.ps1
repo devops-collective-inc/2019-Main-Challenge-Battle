@@ -1,1 +1,0 @@
-Limit-EventLog -LogName Application -MaximumSize 4194304 -OverflowAction DoNotOverwrite
