@@ -1,5 +1,5 @@
 
 
-Install-WindowsFeature "Web-Server","Windows-Internal-DB","NLB" -includemanagementtools
+Install-WindowsFeature "Web-Server","Windows-Internal-DB","NLB"
 
 Uninstall-windowsfeature "Powershell-v2" -remove
