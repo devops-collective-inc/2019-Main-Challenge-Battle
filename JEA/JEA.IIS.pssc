@@ -39,11 +39,13 @@
             Parameters=
                 @{Name='Name';ValidatePattern='^W3Svc$'}
         },
-        @{Name='Start-Website'},
-        @{Name='Stop-Website'},
-        @{Name='Start-WebAppPool'},
-        @{Name='Stop-WebAppPool'},
-        @{Name='New-WebAppPool'}
+        'Start-Website',
+        'Stop-Website',
+        'Start-WebAppPool',
+        'Stop-WebAppPool',
+        'New-WebAppPool',
+        'Get-WebAppPool',
+        'Get-WebSite'
 
 
 
